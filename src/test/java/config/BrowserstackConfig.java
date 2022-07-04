@@ -3,7 +3,7 @@ package config;
 import org.aeonbits.owner.Config;
 
 @Config.Sources({
-        "classpath:config/credential.properties"})
+        "classpath:config/credentials.properties"})
 public interface BrowserstackConfig extends Config {
 
     @Key("login")
@@ -11,9 +11,6 @@ public interface BrowserstackConfig extends Config {
 
     @Key("password")
     String password();
-
-    @Key("baseURL")
-    String baseURL();
 
     @Key("appURL")
     String appURL();
@@ -23,5 +20,8 @@ public interface BrowserstackConfig extends Config {
 
     @Key("os_version")
     String os_version();
+
+    @Key("baseURL")
+    String baseURL();
 }
 
