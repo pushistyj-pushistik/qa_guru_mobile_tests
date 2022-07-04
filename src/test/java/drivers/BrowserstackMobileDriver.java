@@ -30,7 +30,7 @@ public class BrowserstackMobileDriver implements WebDriverProvider {
 
         mutableCapabilities.setCapability("project", "QA.GURU mobile tests");
         mutableCapabilities.setCapability("build", "browserstack-build-1");
-        mutableCapabilities.setCapability("name", "selenide android tests");
+        mutableCapabilities.setCapability("name", "wiki tests");
         return new RemoteWebDriver(getBrowserstackUrl(), mutableCapabilities);
     }
 
