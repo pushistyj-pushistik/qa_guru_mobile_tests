@@ -6,13 +6,13 @@ import org.aeonbits.owner.Config;
         "classpath:config/credentials.properties"})
 public interface BrowserstackConfig extends Config {
 
-    @Key("login")
+    @Key("browserstack.user")
     String login();
 
-    @Key("password")
+    @Key("browserstack.key")
     String password();
 
-    @Key("appURL")
+    @Key("app")
     String appURL();
 
     @Key("device")
