@@ -23,5 +23,8 @@ public interface BrowserstackConfig extends Config {
 
     @Key("baseURL")
     String baseURL();
+
+    @Key("deviceHost")
+    String deviceHost();
 }
 
