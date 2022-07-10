@@ -24,7 +24,8 @@ public class SearchWikiTest extends TestBase{
         });
         step("Open article", () -> {
                 $(AppiumBy.id("org.wikipedia.alpha:id/page_list_item_title")).click();
-                $(AppiumBy.className("android.widget.TextView")).shouldHave(Condition.text("GTA"));
+              //  switchTo().alert().accept();
+                $(AppiumBy.className("android.widget.TextView")).shouldHave(Condition.text("Grand Theft Auto"));
         });
     }
 }

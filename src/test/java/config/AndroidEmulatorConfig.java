@@ -4,7 +4,7 @@ import org.aeonbits.owner.Config;
 
 @Config.Sources({
         "classpath:config/androidEmulator.properties"})
-public interface LocalConfig extends Config {
+public interface AndroidEmulatorConfig extends Config {
     @Key("localURL")
     String localURL();
 
